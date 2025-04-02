@@ -19,8 +19,8 @@ form.addEventListener('submit', e => {
   ) {
     alert('Fill please all fields');
   } else {
-    formData.email = form.elements.email.value;
-    formData.message = form.elements.message.value;
     console.log(formData);
+    form.reset();
+    localStorage.clear();
   }
 });
