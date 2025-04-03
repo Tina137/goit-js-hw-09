@@ -21,6 +21,6 @@ form.addEventListener('submit', e => {
   } else {
     console.log(formData);
     form.reset();
-    localStorage.clear();
+    localStorage.removeItem('feedback-form-state');
   }
 });
